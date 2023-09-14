@@ -1,4 +1,5 @@
-<h1 align="center">Mercat</h1>
+<p align="center">![mercat-black-2021](https://github.com/teffysr/library/assets/18340584/edf5e0cc-9a96-4c3a-af60-ae3e9fe97fad)
+</p>
 
 <p align="center">Challenge</p>
 
