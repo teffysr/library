@@ -1,4 +1,4 @@
-<p align="center">![mercat-black-2021](https://github.com/teffysr/library/assets/18340584/edf5e0cc-9a96-4c3a-af60-ae3e9fe97fad)
+<p align="center"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/18340584/267901588-edf5e0cc-9a96-4c3a-af60-ae3e9fe97fad.png" width="300" >
 </p>
 
 <p align="center">Challenge</p>
