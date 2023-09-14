@@ -1,24 +1,83 @@
-# README
+<h1 align="center">Mercat</h1>
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<p align="center">Challenge</p>
 
-Things you may want to cover:
+### Source
+    git clone https://github.com/teffysr/library.git 
 
-* Ruby version
+### Download Project Dependencies
+    bundle install 
 
-* System dependencies
 
-* Configuration
+### Run tests
+    bundle exec rspec
 
-* Database creation
+### Endpoints Library
+#### Books
+    List of books:
+    GET http://localhost:3000/books
+    
+    Get a book:
+    GET http://localhost:3000/books/:id
 
-* Database initialization
+    Create a book:
+    POST http://localhost:3000/books
+        body: {
+            "available":true,
+            "editorial":":"Editorial Planeta",
+            "author":"Jonathan Freedland",
+            "title":"El maestro de la fuga"
+        }
 
-* How to run the test suite
+    Update a book
+    PATCH http://localhost:3000/books/:id
+        body: {
+            "available":true,
+            "editorial":":"Editorial Planeta",
+            "author":"Jonathan Freedland",
+            "title":"La partida final"
+        }
 
-* Services (job queues, cache servers, search engines, etc.)
+#### User
+    List of users:
+    GET http://localhost:3000/users
+    
+    Get a user:
+    GET http://localhost:3000/users/:id
 
-* Deployment instructions
+    Create a user:
+    POST http://localhost:3000/users
+        body: {
+            "identification": "DNI 14000007",
+            "name": "Sandra Barneda",
+            "address": "Las Palmas 358, Castelar, Bs. As.",
+            "email": "sandra@test.com",
+            "phone": "541163587412",
+        }
 
-* ...
+    Update a user
+    PATCH http://localhost:3000/users/:id
+        body: {
+            "identification": "DNI 14000007",
+            "name": "Sandra Barneda",
+            "address": "742 de Evergreen Terrace, Springfield, EE. UU.",
+            "email": "sandra@test.com",
+            "phone": "541163500002",
+        }
+#### Loan
+    List of loans:
+    GET http://localhost:3000/loans
+    
+    Get a loan:
+    GET http://localhost:3000/loans/:id
+
+    Create a loan:
+    POST http://localhost:3000/loans
+        body: {
+            "user_id":3,
+	        "book_id":6
+        }
+
+    Return a loan
+    PATCH http://localhost:3000/loans/:id/return
+
