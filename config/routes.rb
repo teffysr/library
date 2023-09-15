@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  root 'web#index';
   resources :users, except: [:edit, :new]
   resources :books, except: [:edit, :new]
 
