@@ -1,0 +1,31 @@
+es:
+  common:
+    confirm: '¿Estas seguro?'
+    edit: 'Editar'
+    delete: 'Eliminar'
+  books:
+    edit:
+      title: 'Editar libro'
+    new:
+      title: 'Añadir libro'
+    index:
+      title: 'Libros'
+    create:
+      created: 'Tu libro se ha creado correctamente'
+    update:
+      updated: 'Tu libro se ha actualizado correctamente'
+    destroy:
+      destroyed: 'Tu libro se ha eliminado correctamente'
+  users:
+    edit:
+      title: 'Editar usuario'
+    new:
+      title: 'Añadir usuario'
+    index:
+      title: 'Usuarios'
+    create:
+      created: 'Tu usuario se ha creado correctamente'
+    update:
+      updated: 'Tu usuario se ha actualizado correctamente'
+    destroy:
+      destroyed: 'Tu usuario se ha eliminado correctamente'

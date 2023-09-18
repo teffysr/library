@@ -1,0 +1,216 @@
+<div class="container">
+  <div class="row mb-5">
+    <div class="col">
+      <p align="center"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/18340584/267901588-edf5e0cc-9a96-4c3a-af60-ae3e9fe97fad.png" width="300" >
+      </p>
+      <p align="center">Challenge</p>
+    </div>
+  </div>
+  <h3>Installation</h3>
+  <div class="row">
+    <div class="col-6">
+      <div class="row">
+        <label><strong>Source</strong></label>
+        <div class="alert alert-secondary" role="alert">
+          git clone https://github.com/teffysr/library.git
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <div class="row">
+        <label><strong>Download Project Dependencies</strong></label>
+        <div class="alert alert-secondary" role="alert">
+          bundle install
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <div class="row">
+        <label><strong>Run tests</strong></label>
+        <div class="alert alert-secondary" role="alert">
+          bundle exec rspec
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Endpoints Library</h3>
+  <div class="accordion text-start mb-5" id="accordionExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Books
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="row">
+            <div class="col-">
+              <div class="row">
+                <label><strong>List of books:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  GET <br>
+                  http://localhost:3000/books<br>
+                  https://library-mercat.fly.dev/books
+                </div>
+
+                <label><strong>Get a book:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  GET <br>
+                  http://localhost:3000/books/:id<br>
+                  https://library-mercat.fly.dev/books/:id
+                </div>
+
+                <label><strong>Create a book:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  POST<br> http://localhost:3000/books<br>
+                  https://library-mercat.fly.dev/books<br>
+                  body: {
+                  "available":true,
+                  "editorial":":"Editorial Planeta",
+                  "author":"Jonathan Freedland",
+                  "title":"El maestro de la fuga"
+                  }
+                </div>
+
+                <label><strong>Update a book</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  PATCH <br> http://localhost:3000/books/:id<br>
+                  https://library-mercat.fly.dev/books/:id<br>
+                  body: {
+                  "available":true,
+                  "editorial":":"Editorial Planeta",
+                  "author":"Jonathan Freedland",
+                  "title":"La partida final"
+                  }
+                </div>
+
+                <label><strong>Delete a book:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  DELETE <br>http://localhost:3000/books/:id<br>
+                  https://library-mercat.fly.dev/books/:id
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Users
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="row">
+            <div class="col-">
+              <div class="row">
+                <label><strong>List of users:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  GET <br>
+                  http://localhost:3000/users<br>
+                  https://library-mercat.fly.dev/users
+                </div>
+
+                <label><strong>Get a users:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  GET <br>
+                  http://localhost:3000/users/:id<br>
+                  https://library-mercat.fly.dev/users/:id
+                </div>
+
+                <label><strong>Create a user:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  POST<br> http://localhost:3000/users<br>
+                  https://library-mercat.fly.dev/users<br>
+                  body: {
+                  "identification": "DNI 14000007",
+                  "name": "Sandra Barneda",
+                  "address": "Las Palmas 358, Castelar, Bs. As.",
+                  "email": "sandra@test.com",
+                  "phone": "541163587412",
+                  }
+                </div>
+
+                <label><strong>Update a user</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  PATCH <br> http://localhost:3000/users/:id<br>
+                  https://library-mercat.fly.dev/users/:id<br>
+                  body: {
+                  "identification": "DNI 14000007",
+                  "name": "Sandra Barneda",
+                  "address": "742 de Evergreen Terrace, Springfield, EE. UU.",
+                  "email": "sandra@test.com",
+                  "phone": "541163500002",
+                  }
+                </div>
+
+                <label><strong>Delete a user:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  DELETE <br>http://localhost:3000/users/:id<br>
+                  https://library-mercat.fly.dev/users/:id
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Loans
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <div class="row">
+            <div class="col-">
+              <div class="row">
+                <label><strong>List of loans:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  GET <br>
+                  http://localhost:3000/loans<br>
+                  https://library-mercat.fly.dev/loans
+                </div>
+
+                <label><strong>Get a loans:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  GET <br>
+                  http://localhost:3000/loans/:id<br>
+                  https://library-mercat.fly.dev/loans/:id
+                </div>
+
+                <label><strong>Create a loan:</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  POST<br> http://localhost:3000/loans<br>
+                  https://library-mercat.fly.dev/loans<br>
+                  body: {
+                  "user_id":3,
+                  "book_id":6
+                  }
+                </div>
+
+                <label><strong>Return a loan</strong></label>
+                <div class="alert alert-secondary" role="alert">
+                  PATCH http://localhost:3000/loans/:id/return
+                  https://library-mercat.fly.dev/loans/:id/return<br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
