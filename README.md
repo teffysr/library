@@ -9,6 +9,8 @@
 ### Download Project Dependencies
     bundle install 
 
+### Database
+    rails db:migrate
 
 ### Run tests
     bundle exec rspec
